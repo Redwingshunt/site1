@@ -14,7 +14,9 @@ body.light-theme {
   --section-bg: #f5f5f5;
 }
 
-
+#theme-text{
+  color: white !important;
+}
 
 
 body {
