@@ -103,7 +103,12 @@ contributing to continuous improvement efforts.</p>
   </main>
 
   <footer>
-    <p>&copy; 2025 Vaibhav Krishna. All rights reserved. hosted on github</p>
+    <p id="footer-text">&copy; <script>
+    const today = new Date();
+    const month = today.toLocaleString('default', { month: 'long' });
+    const year = today.getFullYear();
+    document.getElementById('footer-text').textContent = `© ${month} ${year} Vaibhav Krishna. All rights reserved. Hosted on GitHub.`;
+  </script> </p>
   </footer>
 
   <script src="script.js"></script>
