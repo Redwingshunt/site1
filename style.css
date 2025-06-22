@@ -27,6 +27,33 @@ body {
   cursor: grab;
 }
 
+
+.name-heading{
+
+
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+
+.name-heading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(to right, #00f, #0ff);
+  border-radius: 2px;
+  transition: background 0.5s ease;
+}
+
+.name-heading:hover::after {
+  background: linear-gradient(to right, #f00, #ff0, #0f0);
+}
+
+
 body.hold-cursor {
   cursor: grabbing;
 }
@@ -102,7 +129,7 @@ footer {
   margin-top: 40px;
 }
 
-/* Optional: Toggle button styling */
+/*contact-me's styling8 */
 #theme-toggle {
   margin-top: 10px;
   padding: 8px 16px;
@@ -115,4 +142,25 @@ footer {
 
 #theme-toggle:hover {
   opacity: 0.8;
+}
+#contact-me {
+ 
+  padding: 30px;
+  border-radius: 10px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#contact-me h2 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+#contact-me ul li a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+#contact-me ul li a:hover {
+  text-decoration: underline;
 }
