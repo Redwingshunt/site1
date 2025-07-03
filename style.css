@@ -1,11 +1,11 @@
 :root {
   --bg-color: #000000;
   --text-color: white;
-  --header-bg: #A4050A;
-  --section-border: #A4050A;
+  --header-bg: hsl(327, 88%, 19%);
+  --section-border: #0a05a4;
   --section-bg: #1a1a1a;
 }
-
+/*  #primary color in dark si == A4050A red*  hsl(327, 93%, 18%) pink; */
 body.light-theme {
   --bg-color: #ffffff;
   --text-color: black;
@@ -144,7 +144,7 @@ footer {
   opacity: 0.8;
 }
 #contact-me {
- 
+
   padding: 30px;
   border-radius: 10px;
   font-family: 'Segoe UI', sans-serif;
